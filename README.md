@@ -25,3 +25,9 @@ P6 ¿Qué significa “Confirmar todo y sincronizar” cuál sería el comando g
 Guarda los cambios en el repositorio local, actuliza los datos en local y en el remoto. 
 Los comandos empleados serian: git commit -a  
                                git push
+
+P7 ¿Cuál es la diferencia entre pulsar Sincronizar o Extraer? ¿Cuáles serían los comandos git equivalentes?
+
+Sincronizar, no da conflictos, actualiza los archivos del repositorio remoto con los datos del local. 
+Extraer, da los commits realizados en el repositorio remoto para ponerlos al local.
+
