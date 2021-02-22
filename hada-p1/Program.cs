@@ -16,7 +16,7 @@ namespace hada_p1
 	/// En el caso de minutos, hara una conversion de minutos a segundos 
 	/// y viseversa en el caso de los segundos.
 	/// Despues se le dara la cantidad de la conversion 
-	/// y se le preguntara si quieres hacer otra conversion
+	/// y se le preguntara si quieres hacer otra conversion 
 	/// </summary>
     class Program
     {
