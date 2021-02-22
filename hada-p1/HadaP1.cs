@@ -8,7 +8,8 @@ namespace hada_p1
 {
     /// <summary>
     /// Esta calse contiene metodos para convertir de
-    /// segundos a minutos y viceversa
+    /// segundos a minutos y viceversa, 
+    /// ademas de un metodo que convierte las horas a minutos
     /// </summary>
     class HadaP1
     {
@@ -21,6 +22,10 @@ namespace hada_p1
         public static double Minutes2Seconds(double m)
         {
             return m / 60;
+        }
+        public static double Horas2Minutes(double h)
+        {
+            return h * 60;
         }
     }
 }

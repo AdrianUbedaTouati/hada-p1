@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace hada_p1
 {
+	/// <summary>
+	/// Ofrecemos al usuario elegir en que unidad desea hacer la conversion,
+	/// si cualquier valor no es corecto el usuario debera poner una vez mas la 
+	/// respuesta.
+	/// Estas unidades son horas, minutos , segundos.
+	/// En el caso de las horas, hara una coversion de horas a minutos utilizando
+	/// el los metodos implementados en HadaP1.cs.
+	/// En el caso de minutos, hara una conversion de minutos a segundos 
+	/// y viseversa en el caso de los segundos.
+	/// Despues se le dara la cantidad de la conversion 
+	/// y se le preguntara si quieres hacer otra conversion
+	/// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -23,10 +35,10 @@ namespace hada_p1
 				
 				
 				do {
-					Console.WriteLine("En que unidad desea hacer la conversion? (segundos o minutos)");
+					Console.WriteLine("En que unidad desea hacer la conversion? (segundos , minutos , horas)");
 					unidad = null;
 					unidad = Console.ReadLine();
-				} while (unidad !="segundos" && unidad !="minutos");
+				} while (unidad !="segundos" && unidad !="minutos" && unidad != "horas");
 
 				do
 				{
@@ -39,6 +51,8 @@ namespace hada_p1
 					Console.WriteLine("La cantidad de "+ cantidad +" segundos, nos un total de " + HadaP1.Minutes2Seconds(cantidad) + " minutos");
 				else if (unidad == "minutos")
 					Console.WriteLine("La cantidad de " + cantidad + " minutos, nos un total de " + HadaP1.Seconds2Minutes(cantidad) + " segundos");
+				else if (unidad == "horas")
+					Console.WriteLine("La cantidad de " + cantidad + " horas, nos un total de " + HadaP1.Horas2Minutes(cantidad) + " minutos");
 
 				do
 				{
